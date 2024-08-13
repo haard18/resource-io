@@ -1,7 +1,6 @@
 export const projects = [
     {
         title: "Sem 1",
-      
         subjects: [
             "Mathematics I",
             "Physics I",
@@ -9,10 +8,10 @@ export const projects = [
             "Programming Fundamentals"
         ],
         link: "https://drive.google.com/drive/folders/1A3JsmjBt-8qE5fDxa0HVlp0-VZ4GkYjJ?usp=drive_link",
+        driveLink: "https://drive.google.com/drive/folders/1A3JsmjBt-8qE5fDxa0HVlp0-VZ4GkYjJ?usp=drive_link"
     },
     {
         title: "Sem 2",
-       
         subjects: [
             "Mathematics II",
             "Physics II",
@@ -20,10 +19,10 @@ export const projects = [
             "Data Structures"
         ],
         link: "https://drive.google.com/drive/folders/1eylgOapntZhOvPl962-c0KlXaEthhHms?usp=drive_link",
+        driveLink: "https://drive.google.com/drive/folders/1eylgOapntZhOvPl962-c0KlXaEthhHms?usp=drive_link"
     },
     {
         title: "Sem 3",
-       
         subjects: [
             "Discrete Mathematics",
             "Digital Logic Design",
@@ -31,10 +30,10 @@ export const projects = [
             "Object-Oriented Programming"
         ],
         link: "https://drive.google.com/drive/folders/10l-yEYAfigiGXrNcENRung7uvZSGhnIW?usp=drive_link",
+        driveLink: "https://drive.google.com/drive/folders/10l-yEYAfigiGXrNcENRung7uvZSGhnIW?usp=drive_link"
     },
     {
         title: "Sem 4",
-       
         subjects: [
             "Computer Networks",
             "Operating Systems",
@@ -42,10 +41,10 @@ export const projects = [
             "Web Development"
         ],
         link: "https://drive.google.com/drive/folders/1X2w3HZ42vqkmJ1pqX3VjhHJzbyD6fywR?usp=drive_link",
+        driveLink: "https://drive.google.com/drive/folders/1X2w3HZ42vqkmJ1pqX3VjhHJzbyD6fywR?usp=drive_link"
     },
     {
         title: "Sem 5",
-       
         subjects: [
             "Algorithms",
             "Machine Learning",
@@ -53,10 +52,10 @@ export const projects = [
             "Mobile App Development"
         ],
         link: "https://drive.google.com/drive/folders/1CptoPYehKhqMUo_FOfrDVGqJhP6NRFp1?usp=drive_link",
+        driveLink: "https://drive.google.com/drive/folders/1CptoPYehKhqMUo_FOfrDVGqJhP6NRFp1?usp=drive_link"
     },
     {
         title: "Sem 6",
-        
         subjects: [
             "Artificial Intelligence",
             "Cloud Computing",
@@ -64,6 +63,7 @@ export const projects = [
             "Big Data Analytics"
         ],
         link: "https://drive.google.com/drive/folders/1vPOp-nqAk9Rm5xYleujeDtzuOHpP_Xyo?usp=drive_link",
+        driveLink: "https://drive.google.com/drive/folders/1vPOp-nqAk9Rm5xYleujeDtzuOHpP_Xyo?usp=drive_link"
     },
     {
         title: "Sem 7",
@@ -74,10 +74,10 @@ export const projects = [
             "Subject 4"
         ],
         link: "https://drive.google.com/drive/folders/1zoj7dlX5mR-lSECl-xRoty59daW_wm3r?usp=drive_link",
+        driveLink: "https://drive.google.com/drive/folders/1zoj7dlX5mR-lSECl-xRoty59daW_wm3r?usp=drive_link"
     },
     {
         title: "Sem 8",
-       
         subjects: [
             "Advanced AI",
             "Blockchain",
@@ -85,5 +85,6 @@ export const projects = [
             "Cybersecurity"
         ],
         link: "https://drive.google.com/drive/folders/11KymfJCK2EVwYO0ahFYFMJMUGEHD39Bl?usp=drive_link",
+        driveLink: "https://drive.google.com/drive/folders/11KymfJCK2EVwYO0ahFYFMJMUGEHD39Bl?usp=drive_link"
     },
 ];

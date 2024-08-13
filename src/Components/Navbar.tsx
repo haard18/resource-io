@@ -1,35 +1,40 @@
 import { useState } from 'react';
- // Assuming you're using react-router-dom for routing
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const navigate=useNavigate();
+    const navigate = useNavigate();
+    
     const handleNavigation = (path: string) => {
         navigate(path);
     };
+    
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
-
     return (
-        <nav className="bg-gray-800 text-sky-100 shadow-md w-full">
+        <nav className="bg-gray-800 text-sky-100 shadow-md w-full ">
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
-                <div className="text-lg font-bold flex items-center space-x-2">
-                    <FontAwesomeIcon icon={faBook} className="text-sky-400 mobile: ml-[-20%]" />
+                {/* Logo and Name */}
+                <div className="flex items-center space-x-2">
+                    <FontAwesomeIcon icon={faBook} className="text-sky-400" />
                     <button
                         onClick={() => handleNavigation('/')}
-                        className="hover:text-sky-400 focus:outline-none"
+                        className="text-lg font-bold hover:text-sky-400 focus:outline-none"
                     >
                         Study Manager
                     </button>
                 </div>
+
+
+
+                {/* Navigation Buttons */}
                 <div className="hidden laptop:flex space-x-4">
                     <button
-                        onClick={() => handleNavigation('/')}
+                        onClick={() => handleNavigation('/resources')}
                         className="bg-gray-600 text-white font-semibold py-2 px-4 rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
                     >
                         Resources
@@ -47,7 +52,9 @@ const Navbar = () => {
                         PYQs
                     </button>
                 </div>
-                <div className="laptop:hidden flex items-center">
+
+                {/* Mobile Menu Button */}
+                <div className="laptop:hidden flex items-center justify-center">
                     <button onClick={toggleMenu} className="outline-none mobile-menu-button">
                         <svg
                             className="w-6 h-6 text-sky-100"
@@ -63,6 +70,8 @@ const Navbar = () => {
                     </button>
                 </div>
             </div>
+
+            {/* Mobile Menu */}
             <div className={`mobile-menu ${isOpen ? 'block' : 'hidden'} laptop:hidden bg-black text-sky-100`}>
                 <button
                     onClick={() => handleNavigation('/resources')}
