@@ -18,10 +18,11 @@ const Navbar = () => {
                     <a href="/notes" className="hover:text-gray-200">Notes</a>
                     <a href="/assignments" className="hover:text-gray-200">Assignments</a>
                 </div>
-                <div className="hidden laptop:flex space-x-4">
+                {/* have to add the github logo + contribute button */}
+                {/* <div className="hidden laptop:flex space-x-4">
                     <button className="bg-blue-800 px-4 py-2 rounded hover:bg-blue-700">Login</button>
                     <button className="bg-blue-800 px-4 py-2 rounded hover:bg-blue-700">Sign Up</button>
-                </div>
+                </div> */}
                 <div className="laptop:hidden flex items-center">
                     <button onClick={toggleMenu} className="outline-none mobile-menu-button">
                         <svg

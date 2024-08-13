@@ -2,17 +2,17 @@ import { HoverEffect } from "./ui/card-hover-effect";
 
 export function CardHoverEffectDemo() {
   return (
-    <div className="max-w-5xl mx-auto px-8">
+    <div className="max-w-5xl mx-auto  px-8">
       <HoverEffect items={projects} />
     </div>
   );
 }
 export const projects = [
   {
-    title: "Stripe",
+    title: "Sem1",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+      "Starter Kit to first semester of ITM University",
+    link: "https://drive.google.com/drive/folders/1A3JsmjBt-8qE5fDxa0HVlp0-VZ4GkYjJ?usp=drive_link",
   },
   {
     title: "Netflix",
