@@ -1,6 +1,6 @@
 import { HoverEffect } from "./ui/card-hover-effect";
 
-import { projects } from "../assets/projects";
+import { projects } from "../assets/resources";
 
 export function CardHoverEffectDemo() {
   return (
