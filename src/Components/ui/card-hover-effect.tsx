@@ -35,7 +35,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-gray-800/[0.8] block rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-50 to-gray-700 block rounded-3xl shadow-xl opacity-5"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -81,7 +81,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "flex flex-col justify-center items-center rounded-2xl h-full w-full p-4 overflow-hidden bg-gray-900 border border-gray-700 group-hover:border-gray-500 relative z-20",
+        "flex flex-col justify-center items-center rounded-3xl h-full w-full p-6 overflow-hidden bg-gradient-to-r from-black to-gray-800 shadow-lg border border-gray-600 group-hover:shadow-2xl transform group-hover:scale-105 transition-transform duration-300",
         className
       )}
     >
@@ -100,7 +100,12 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-white font-bold tracking-wide mt-4 text-center", className)}>
+    <h4
+      className={cn(
+        "text-white font-bold tracking-wide mt-4 text-center text-lg",
+        className
+      )}
+    >
       {children}
     </h4>
   );
@@ -116,7 +121,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-gray-400 tracking-wide leading-relaxed text-sm text-center",
+        "mt-8 text-gray-300 tracking-wide leading-relaxed text-sm text-center",
         className
       )}
     >
@@ -135,7 +140,7 @@ export const CardSubjects = ({
   return (
     <ul
       className={cn(
-        "mt-4 text-gray-300 tracking-wide leading-relaxed text-sm text-center list-none",
+        "mt-4 text-gray-200 tracking-wide leading-relaxed text-sm text-center list-none",
         className
       )}
     >
@@ -161,7 +166,7 @@ export const DriveLinkButton = ({
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "inline-block px-4 py-2 mt-2 text-sm font-medium text-white bg-gray-800 rounded hover:bg-gray-700 transition-colors",
+        "inline-block px-4 py-2 mt-2 text-sm font-medium text-white bg-gradient-to-r from-black to-gray-700 rounded hover:bg-gradient-to-l hover:from-gray-700 hover:to-black transition-colors duration-300",
         className
       )}
     >
