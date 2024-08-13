@@ -10,6 +10,7 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    driveLink: string;
   }[];
   className?: string;
 }) => {
@@ -50,6 +51,9 @@ export const HoverEffect = ({
           <Card>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
+            <div className="mt-6">
+              <DriveLinkButton driveLink={item.driveLink} />
+            </div>
           </Card>
         </a>
       ))}
@@ -86,7 +90,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-sky-100 font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("text-sky-800 font-bold tracking-wide mt-4", className)}>
       {children}
     </h4>
   );
@@ -102,11 +106,33 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-sky-400 tracking-wide leading-relaxed text-sm",
+        "mt-8 text-sky-600 tracking-wide leading-relaxed text-sm",
         className
       )}
     >
       {children}
     </p>
+  );
+};
+
+export const DriveLinkButton = ({
+  driveLink,
+  className,
+}: {
+  driveLink: string;
+  className?: string;
+}) => {
+  return (
+    <a
+      href={driveLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={cn(
+        "inline-block px-4 py-2 mt-2 text-sm font-medium text-white bg-sky-700 rounded hover:bg-sky-800 transition-colors",
+        className
+      )}
+    >
+      Open Drive Link
+    </a>
   );
 };

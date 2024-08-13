@@ -8,25 +8,20 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-blue-600 text-white shadow-md w-full">
+        <nav className="bg-black text-sky-100 shadow-md w-full">
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
                 <div className="text-lg font-bold">
-                    <a href="/" className="hover:text-gray-200">Study Manager</a>
+                    <a href="/" className="hover:text-sky-400">Study Manager</a>
                 </div>
                 <div className="hidden laptop:flex space-x-8">
-                    <a href="/resources" className="hover:text-gray-200">Resources</a>
-                    <a href="/notes" className="hover:text-gray-200">Notes</a>
-                    <a href="/assignments" className="hover:text-gray-200">Assignments</a>
+                    <a href="/resources" className="hover:text-sky-400">Resources</a>
+                    <a href="/notes" className="hover:text-sky-400">Notes</a>
+                    <a href="/assignments" className="hover:text-sky-400">Assignments</a>
                 </div>
-                {/* have to add the github logo + contribute button */}
-                {/* <div className="hidden laptop:flex space-x-4">
-                    <button className="bg-blue-800 px-4 py-2 rounded hover:bg-blue-700">Login</button>
-                    <button className="bg-blue-800 px-4 py-2 rounded hover:bg-blue-700">Sign Up</button>
-                </div> */}
                 <div className="laptop:hidden flex items-center">
                     <button onClick={toggleMenu} className="outline-none mobile-menu-button">
                         <svg
-                            className="w-6 h-6 text-white"
+                            className="w-6 h-6 text-sky-100"
                             fill="none"
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -39,12 +34,12 @@ const Navbar = () => {
                     </button>
                 </div>
             </div>
-            <div className={`mobile-menu ${isOpen ? 'block' : 'hidden'} laptop:hidden`}>
-                <a href="/resources" className="block px-4 py-2 text-sm hover:bg-blue-700">Resources</a>
-                <a href="/notes" className="block px-4 py-2 text-sm hover:bg-blue-700">Notes</a>
-                <a href="/assignments" className="block px-4 py-2 text-sm hover:bg-blue-700">Assignments</a>
-                <a href="/login" className="block px-4 py-2 text-sm hover:bg-blue-700">Login</a>
-                <a href="/signup" className="block px-4 py-2 text-sm hover:bg-blue-700">Sign Up</a>
+            <div className={`mobile-menu ${isOpen ? 'block' : 'hidden'} laptop:hidden bg-black text-sky-100`}>
+                <a href="/resources" className="block px-4 py-2 text-sm hover:bg-sky-700">Resources</a>
+                <a href="/notes" className="block px-4 py-2 text-sm hover:bg-sky-700">Notes</a>
+                <a href="/assignments" className="block px-4 py-2 text-sm hover:bg-sky-700">Assignments</a>
+                <a href="/login" className="block px-4 py-2 text-sm hover:bg-sky-700">Login</a>
+                <a href="/signup" className="block px-4 py-2 text-sm hover:bg-sky-700">Sign Up</a>
             </div>
         </nav>
     );
