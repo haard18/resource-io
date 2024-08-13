@@ -1,4 +1,3 @@
-import React from 'react'
 import { CardHoverEffectDemo } from '../Components/Cards'
 import Navbar from '../Components/Navbar'
 import { AnimatedTooltipPreview } from '../Components/Tooltip'
