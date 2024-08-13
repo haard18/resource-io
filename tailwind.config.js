@@ -11,11 +11,14 @@ export default {
       // => @media (min-width: 340px) { ... }
 
       'laptop': '540px',
-      // => @media (min-width: 1024px) { ... }
+      // => @media (min-width: 540px) { ... }
 
       'desktop': '1280px',
-      // => @media (min-width: 1280px) { ... }
-    },
+      // => @media (min-width: 1280px) { ... }
+
+      'large': '1440px',
+      // => @media (min-width: 1440px) { ... }
+    },
   },
   plugins: [],
 }

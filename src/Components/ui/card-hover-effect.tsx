@@ -21,7 +21,7 @@ export const HoverEffect = ({
     <div
       className={cn(
         "flex flex-col items-center gap-6 py-10",
-        "mobile:flex-row mobile:flex-wrap laptop:flex-row laptop:justify-center desktop:flex-row desktop:justify-center",
+        "mobile:flex-row mobile:flex-wrap laptop:flex-row laptop:justify-center desktop:flex-row desktop:justify-center large:flex-row large:justify-center",
         className
       )}
     >
