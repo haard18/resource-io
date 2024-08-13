@@ -20,14 +20,13 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "flex flex-col items-center gap-6 py-10", // Center content and add gap
-        "mobile:flex-row mobile:flex-wrap laptop:flex-row laptop:justify-center desktop:flex-row desktop:justify-center", // Flex row on laptop and desktop, flex column on mobile
+        "flex flex-col items-center gap-6 py-10",
+        "mobile:flex-row mobile:flex-wrap laptop:flex-row laptop:justify-center desktop:flex-row desktop:justify-center",
         className
       )}
     >
       {items.map((item, idx) => (
-        <a
-          href={item?.link}
+        <div
           key={item?.link}
           className="relative group block w-full max-w-sm"
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -51,7 +50,9 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
+            <a href={item?.link}>
+              <CardTitle>{item.title}</CardTitle>
+            </a>
             {item.description && (
               <CardDescription>{item.description}</CardDescription>
             )}
@@ -60,11 +61,11 @@ export const HoverEffect = ({
                 <CardSubjects subjects={item.subjects} />
               </div>
             )}
-            <div className="mt-6 flex justify-center"> {/* Centering the button */}
+            <div className="mt-6 flex justify-center">
               <DriveLinkButton driveLink={item.driveLink} />
             </div>
           </Card>
-        </a>
+        </div>
       ))}
     </div>
   );

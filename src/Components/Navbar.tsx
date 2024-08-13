@@ -2,11 +2,14 @@ import { useState } from 'react';
  // Assuming you're using react-router-dom for routing
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    
-
+    const navigate=useNavigate();
+    const handleNavigation = (path: string) => {
+        navigate(path);
+    };
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
@@ -26,7 +29,7 @@ const Navbar = () => {
                 </div>
                 <div className="hidden laptop:flex space-x-4">
                     <button
-                        onClick={() => handleNavigation('/resources')}
+                        onClick={() => handleNavigation('/')}
                         className="bg-gray-600 text-white font-semibold py-2 px-4 rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
                     >
                         Resources
@@ -38,10 +41,10 @@ const Navbar = () => {
                         Notes
                     </button>
                     <button
-                        onClick={() => handleNavigation('/assignments')}
+                        onClick={() => handleNavigation('/pyq')}
                         className="bg-gray-600 text-white font-semibold py-2 px-4 rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
                     >
-                        Assignments
+                        PYQs
                     </button>
                 </div>
                 <div className="laptop:hidden flex items-center">

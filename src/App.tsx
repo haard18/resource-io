@@ -1,15 +1,25 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import { CardHoverEffectDemo } from './Components/Cards'
-import Navbar from './Components/Navbar'
+
+import Home from './pages/Home'
+import Notes from './pages/Notes'
+import Pyq from './pages/Pyq'
 
 function App() {
 
-
+  
   return (
     <>
-      <Navbar />
-      <CardHoverEffectDemo/>
+      
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          
+          <Route path="/notes" element={<Notes />} />
+          <Route path='/pyq' element={<Pyq/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
