@@ -8,7 +8,8 @@ export const HoverEffect = ({
 }: {
   items: {
     title: string;
-    description: string;
+    description?: string;
+    subjects?: string[];
     link: string;
     driveLink: string;
   }[];
@@ -19,7 +20,8 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10",
+        "flex flex-col items-center gap-6 py-10", // Center content and add gap
+        "mobile:flex-row mobile:flex-wrap laptop:flex-row laptop:justify-center desktop:flex-row desktop:justify-center", // Flex row on laptop and desktop, flex column on mobile
         className
       )}
     >
@@ -27,14 +29,14 @@ export const HoverEffect = ({
         <a
           href={item?.link}
           key={item?.link}
-          className="relative group block p-2 h-full w-full"
+          className="relative group block w-full max-w-sm"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-sky-200 dark:bg-sky-800/[0.8] block rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-gray-800/[0.8] block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -50,8 +52,15 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
             <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
-            <div className="mt-6">
+            {item.description && (
+              <CardDescription>{item.description}</CardDescription>
+            )}
+            {item.subjects && (
+              <div className="mt-6 text-center">
+                <CardSubjects subjects={item.subjects} />
+              </div>
+            )}
+            <div className="mt-6 flex justify-center"> {/* Centering the button */}
               <DriveLinkButton driveLink={item.driveLink} />
             </div>
           </Card>
@@ -71,7 +80,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-sky-500/[0.2] group-hover:border-sky-700 relative z-20",
+        "flex flex-col justify-center items-center rounded-2xl h-full w-full p-4 overflow-hidden bg-gray-900 border border-gray-700 group-hover:border-gray-500 relative z-20",
         className
       )}
     >
@@ -90,7 +99,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-sky-800 font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("text-white font-bold tracking-wide mt-4 text-center", className)}>
       {children}
     </h4>
   );
@@ -106,12 +115,35 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-sky-600 tracking-wide leading-relaxed text-sm",
+        "mt-8 text-gray-400 tracking-wide leading-relaxed text-sm text-center",
         className
       )}
     >
       {children}
     </p>
+  );
+};
+
+export const CardSubjects = ({
+  subjects,
+  className,
+}: {
+  subjects: string[];
+  className?: string;
+}) => {
+  return (
+    <ul
+      className={cn(
+        "mt-4 text-gray-300 tracking-wide leading-relaxed text-sm text-center list-none",
+        className
+      )}
+    >
+      {subjects.map((subject, index) => (
+        <li key={index} className="mt-1">
+          {subject}
+        </li>
+      ))}
+    </ul>
   );
 };
 
@@ -128,7 +160,7 @@ export const DriveLinkButton = ({
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "inline-block px-4 py-2 mt-2 text-sm font-medium text-white bg-sky-700 rounded hover:bg-sky-800 transition-colors",
+        "inline-block px-4 py-2 mt-2 text-sm font-medium text-white bg-gray-800 rounded hover:bg-gray-700 transition-colors",
         className
       )}
     >

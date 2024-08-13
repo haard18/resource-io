@@ -1,22 +1,48 @@
 import { useState } from 'react';
+ // Assuming you're using react-router-dom for routing
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBook } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
+
     return (
-        <nav className="bg-black text-sky-100 shadow-md w-full">
+        <nav className="bg-gray-800 text-sky-100 shadow-md w-full">
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
-                <div className="text-lg font-bold">
-                    <a href="/" className="hover:text-sky-400">Study Manager</a>
+                <div className="text-lg font-bold flex items-center space-x-2">
+                    <FontAwesomeIcon icon={faBook} className="text-sky-400 mobile: ml-[-20%]" />
+                    <button
+                        onClick={() => handleNavigation('/')}
+                        className="hover:text-sky-400 focus:outline-none"
+                    >
+                        Study Manager
+                    </button>
                 </div>
-                <div className="hidden laptop:flex space-x-8">
-                    <a href="/resources" className="hover:text-sky-400">Resources</a>
-                    <a href="/notes" className="hover:text-sky-400">Notes</a>
-                    <a href="/assignments" className="hover:text-sky-400">Assignments</a>
+                <div className="hidden laptop:flex space-x-4">
+                    <button
+                        onClick={() => handleNavigation('/resources')}
+                        className="bg-gray-600 text-white font-semibold py-2 px-4 rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
+                    >
+                        Resources
+                    </button>
+                    <button
+                        onClick={() => handleNavigation('/notes')}
+                        className="bg-gray-600 text-white font-semibold py-2 px-4 rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
+                    >
+                        Notes
+                    </button>
+                    <button
+                        onClick={() => handleNavigation('/assignments')}
+                        className="bg-gray-600 text-white font-semibold py-2 px-4 rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
+                    >
+                        Assignments
+                    </button>
                 </div>
                 <div className="laptop:hidden flex items-center">
                     <button onClick={toggleMenu} className="outline-none mobile-menu-button">
@@ -35,11 +61,24 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={`mobile-menu ${isOpen ? 'block' : 'hidden'} laptop:hidden bg-black text-sky-100`}>
-                <a href="/resources" className="block px-4 py-2 text-sm hover:bg-sky-700">Resources</a>
-                <a href="/notes" className="block px-4 py-2 text-sm hover:bg-sky-700">Notes</a>
-                <a href="/assignments" className="block px-4 py-2 text-sm hover:bg-sky-700">Assignments</a>
-                <a href="/login" className="block px-4 py-2 text-sm hover:bg-sky-700">Login</a>
-                <a href="/signup" className="block px-4 py-2 text-sm hover:bg-sky-700">Sign Up</a>
+                <button
+                    onClick={() => handleNavigation('/resources')}
+                    className="block w-full text-left px-4 py-2 text-sm bg-gray-800 text-white font-semibold rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
+                >
+                    Resources
+                </button>
+                <button
+                    onClick={() => handleNavigation('/notes')}
+                    className="block w-full text-left px-4 py-2 text-sm bg-gray-800 text-white font-semibold rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
+                >
+                    Notes
+                </button>
+                <button
+                    onClick={() => handleNavigation('/assignments')}
+                    className="block w-full text-left px-4 py-2 text-sm bg-gray-800 text-white font-semibold rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
+                >
+                    Assignments
+                </button>
             </div>
         </nav>
     );
