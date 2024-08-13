@@ -4,9 +4,11 @@ import { projects } from "../assets/projects";
 
 export function CardHoverEffectDemo() {
   return (
-    <div className="max-w-5xl mx-auto  px-8">
+    <div className="mx-auto px-8 w-full bg-gradient-to-r from-black via-gray-900 to-black">
       <HoverEffect items={projects} />
     </div>
+
+
   );
 }
 
