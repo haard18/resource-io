@@ -1,11 +1,12 @@
 
 import Navbar from '../Components/Navbar'
+import { PYQ } from '../Components/PYQCards'
 
 const Pyq = () => {
   return (
     <div>
       <Navbar/>
-      PADHLO BHADWO EXAM BAAKI HAI ABHI
+      <PYQ/>
     </div>
   )
 }
