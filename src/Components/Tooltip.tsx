@@ -1,34 +1,35 @@
 "use client";
 import { AnimatedTooltip } from "../Components/ui/animated-tooltip";
+import dev from "../assets/images/dev.jpeg";
+import dhairya from "../assets/images/dhairya.jpeg";
+import haard from "../assets/images/Haard.jpeg";
+import mandar from "../assets/images/mandar.jpeg";
+
 const people = [
   {
     id: 1,
     name: "Dev Patil",
     designation: "Frontend Wizard",
-    image:
-      "src/assets/images/dev.jpeg",
+    image: dev,
   },
   {
     id: 2,
     name: "Dhairya Chawda",
     designation: "Ui/UX Designer",
-    image:
-      "src/assets/images/dhairya.jpeg",
+    image: dhairya,
   },
   {
     id: 3,
     name: "Haard Solanki",
     designation: "Prodigy",
-    image:
-      "src/assets/images/Haard.jpeg",
+    image: haard,
   },
   {
-    id:4,
-    name:"Mandar Nikam",
-    designation:"Bhau",
-    image:"src/assets/images/mandar.jpeg"
-  }
-
+    id: 4,
+    name: "Mandar Nikam",
+    designation: "Bhau",
+    image: mandar,
+  },
 ];
 
 export function AnimatedTooltipPreview() {
