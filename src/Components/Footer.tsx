@@ -1,4 +1,3 @@
-import React from 'react'
 import { AnimatedTooltipPreview } from './Tooltip'
 
 const Footer = () => {
