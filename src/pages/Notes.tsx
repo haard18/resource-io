@@ -1,5 +1,6 @@
 
 import Navbar from '../Components/Navbar'
+import { Footer } from './Home'
 
 const Notes = () => {
   return (
@@ -7,6 +8,7 @@ const Notes = () => {
       <Navbar/>
 
       TO BE UPLOADED SOON
+      <Footer/>
     </div>
   )
 }
