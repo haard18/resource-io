@@ -1,5 +1,6 @@
 
 import './App.css'
+import { CardHoverEffectDemo } from './Components/Cards'
 import Navbar from './Components/Navbar'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
     <div className="navbar w-full">
       <Navbar />
+      <CardHoverEffectDemo/>
       </div>
     </>
   )

@@ -16,7 +16,7 @@ const Navbar = () => {
                 </div>
                 <div className="space-x-4">
                     <button className="bg-blue-800 px-4 py-2 rounded hover:bg-blue-700">Login</button>
-                    <button className="bg-blue-800 px-4 py-2 rounded hover:bg-blue-700">Sign Up</button>
+                   
                 </div>
             </div>
         </nav>
