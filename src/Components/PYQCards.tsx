@@ -1,7 +1,7 @@
 import { HoverEffect } from "./ui/card-hover-effect";
 
 import { pyqs } from "../assets/pyq";
-import { AnimatedTooltipPreview } from "./Tooltip";
+
 
 export function PYQ() {
   return (
@@ -11,7 +11,7 @@ export function PYQ() {
       </h1>
       <HoverEffect items={pyqs} />
 
-      <AnimatedTooltipPreview/>
+
     </div>
 
 
