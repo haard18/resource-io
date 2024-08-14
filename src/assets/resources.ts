@@ -53,7 +53,7 @@ export const projects = [
             "Mobile App Development"
         ],
         link: "https://drive.google.com/drive/folders/1CptoPYehKhqMUo_FOfrDVGqJhP6NRFp1?usp=drive_link",
-        driveLink: "https://drive.google.com/drive/folders/1CptoPYehKhqMUo_FOfrDVGqJhP6NRFp1?usp=drive_link"
+        driveLink: "https://drive.google.com/drive/folders/1OzJ-UIRFUJ7U4uofyTtbAB90s7sKkRFS?usp=sharing"
     },
     {
         title: "Sem 6",
