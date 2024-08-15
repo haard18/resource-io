@@ -6,7 +6,7 @@ import Navbar from "../Components/Navbar";
 
 const VideoList: React.FC = () => {
     const { semester } = useParams<{ semester: string }>();
-    
+
     // Decode and format the semester string
     const formattedSemester = decodeURIComponent(semester || "").replace(/%20/g, " ");
 
@@ -64,9 +64,10 @@ const VideoList: React.FC = () => {
                 </div>
                 {/* Spacer to push footer to the bottom */}
                 <div className="h-16"></div>
-                <div className="p-4 bg-gradient-to-r from-black via-gray-900 to-black">
+                <div className="p-4 mobile:p-4 ml-[-10%] laptop:p-8 bg-gradient-to-r from-black via-gray-900 to-black">
                     <Footer />
                 </div>
+
             </div>
         </>
     );

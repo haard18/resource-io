@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import { subs } from "../assets/subjects"; // Adjust the import path as necessary
+import { Footer } from "./Home";
 
 const SemesterPage = () => {
   const navigate = useNavigate();
@@ -18,8 +19,8 @@ const SemesterPage = () => {
           Select a Semester
         </h1>
         <div className="flex justify-center items-center w-full max-w-screen-xl px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
-        {subs.map((semester) => (
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+            {subs.map((semester) => (
               <div
                 key={semester.title}
                 className="bg-gray-800 shadow-lg rounded-lg p-6 text-center cursor-pointer hover:bg-blue-700 transition-transform transform hover:scale-105"
@@ -40,7 +41,13 @@ const SemesterPage = () => {
             ))}
           </div>
         </div>
+        {/* Spacer to push footer to the bottom */}
+        <div className="h-16"></div>
+
       </div>
+      <div className="p-4 justify-center mobile:p-4 ml-[-10%] laptop:p-8 bg-gradient-to-r from-black via-gray-900 to-black">
+          <Footer />
+        </div>
     </>
   );
 };
