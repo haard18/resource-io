@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBook } from '@fortawesome/free-solid-svg-icons';
+import logo from '../assets/logo.jpeg';
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
@@ -20,12 +19,12 @@ const Navbar = () => {
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
                 {/* Logo and Name */}
                 <div className="flex items-center space-x-2">
-                    <FontAwesomeIcon icon={faBook} className="text-sky-400" />
+                    <img src={logo} alt="" className='w-8 h-18 rounded-full'/>
                     <button
                         onClick={() => handleNavigation('/')}
                         className="text-lg font-bold hover:text-sky-400 focus:outline-none"
                     >
-                        Study Manager
+                        Resource.IO
                     </button>
                 </div>
 
