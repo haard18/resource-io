@@ -86,10 +86,10 @@ const Navbar = () => {
                     Notes
                 </button>
                 <button
-                    onClick={() => handleNavigation('/assignments')}
+                    onClick={() => handleNavigation('/pyq')}
                     className="block w-full text-left px-4 py-2 text-sm bg-gray-800 text-white font-semibold rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
                 >
-                    Assignments
+                    PYQs
                 </button>
             </div>
         </nav>
