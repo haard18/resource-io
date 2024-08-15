@@ -6,7 +6,9 @@ const SemesterPage = () => {
     const navigate = useNavigate();
 
     const handleCardClick = (semester: string) => {
-        navigate(`/videos/${semester}`);
+        // Encode the semester string to handle spaces and special characters
+        const encodedSemester = encodeURIComponent(semester);
+        navigate(`/videos/${encodedSemester}`);
     };
 
     return (
