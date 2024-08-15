@@ -1,6 +1,6 @@
 export const subs=[
     {
-        title: "Sem 1",
+        title: "Sem1",
         subjects: [
             "Programming In Python-1",
             "Web Technologies",
@@ -10,7 +10,7 @@ export const subs=[
         
     },
     {
-        title: "Sem 2",
+        title: "Sem2",
         subjects: [
             "Programming C",
             "Programming Python-II",
@@ -19,7 +19,7 @@ export const subs=[
         ],
     },
     {
-        title: "Sem 3",
+        title: "Sem3",
         subjects:[
             "Computer Organization and Architecture",
             "System Software",
@@ -28,7 +28,7 @@ export const subs=[
         ]
     },
     {
-        title:"Sem 4",
+        title:"Sem4",
         subjects:[
             "Computer Networks",
             "Operating Systems",
@@ -38,7 +38,7 @@ export const subs=[
         ]
     },
     {
-        title:"Sem 5",
+        title:"Sem5",
         subjects:[
             "Machine Learning",
             "Theory of computation",
@@ -47,7 +47,7 @@ export const subs=[
         ]
     },
     {
-        title:"Sem 6",
+        title:"Sem6",
         subjects:[
             "Artificial Intelligence",
             "Big Data Analytics",
@@ -56,7 +56,7 @@ export const subs=[
         ]
     },
     {
-        title:"Sem 7",
+        title:"Sem7",
         subjects:[
             "Python",
             "Java",
@@ -65,7 +65,7 @@ export const subs=[
         ]
     },
     {
-        title:"Sem 8",
+        title:"Sem8",
         subjects:[
             "React",
             "NodeJS",
