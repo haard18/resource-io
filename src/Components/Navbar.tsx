@@ -34,7 +34,7 @@ const Navbar = () => {
                 {/* Navigation Buttons */}
                 <div className="hidden laptop:flex space-x-4">
                     <button
-                        onClick={() => handleNavigation('/')}
+                        onClick={() => handleNavigation('/resources')}
                         className="bg-gray-600 text-white font-semibold py-2 px-4 rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
                     >
                         Resources
