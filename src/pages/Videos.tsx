@@ -6,10 +6,13 @@ import Navbar from "../Components/Navbar";
 
 const VideoList: React.FC = () => {
     const { semester } = useParams<{ semester: string }>();
+    
+    // Decode and format the semester string
+    const formattedSemester = decodeURIComponent(semester || "").replace(/%20/g, " ");
 
     // Find the videos for the selected semester
     const selectedSemester = videosArray.find(
-        (sem) => sem.semester.toLowerCase() === semester?.toLowerCase()
+        (sem) => sem.semester.toLowerCase() === formattedSemester.toLowerCase()
     );
 
     const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -21,20 +24,20 @@ const VideoList: React.FC = () => {
     return (
         <>
             <Navbar />
-            <div className="min-h-screen bg-gradient-to-r from-gray-800 via-gray-900  to-black text-white p-6">
+            <div className="min-h-screen bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white p-6">
                 {selectedSemester ? (
                     <>
                         <h2 className="text-3xl font-bold mb-6 text-center">
                             Videos for {selectedSemester.semester}
                         </h2>
-                        <div className="flex flex-col m-auto gap-4 w-1/2 ">
+                        <div className="flex flex-col m-auto gap-4 w-1/2">
                             {selectedSemester.videos.map((video, index) => (
                                 <div
                                     key={index}
                                     className="bg-slate-900 shadow-lg rounded-lg p-4 border border-gray-200"
                                 >
-                                    <div className="flex items-center justify-between mb-2 ">
-                                        <h3 className="text-lg font-semibold text-white ">
+                                    <div className="flex items-center justify-between mb-2">
+                                        <h3 className="text-lg font-semibold text-white">
                                             {video.title}
                                         </h3>
                                         <button
