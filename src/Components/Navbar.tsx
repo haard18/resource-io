@@ -5,11 +5,11 @@ import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const navigate = useNavigate();
-    
+
     const handleNavigation = (path: string) => {
         navigate(path);
     };
-    
+
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
                 {/* Logo and Name */}
                 <div className="flex items-center space-x-2">
-                    <img src={logo} alt="" className='w-8 h-18 rounded-full'/>
+                    <img src={logo} alt="" className='w-8 h-18 rounded-full' />
                     <button
                         onClick={() => handleNavigation('/')}
                         className="text-lg font-bold hover:text-sky-400 focus:outline-none"
@@ -32,17 +32,18 @@ const Navbar = () => {
 
                 {/* Navigation Buttons */}
                 <div className="hidden laptop:flex space-x-4">
-                    <button
-                        onClick={() => handleNavigation('/resources')}
-                        className="bg-gray-600 text-white font-semibold py-2 px-4 rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
-                    >
-                        Resources
-                    </button>
+
                     <button
                         onClick={() => handleNavigation('/')}
                         className="bg-gray-600 text-white font-semibold py-2 px-4 rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
                     >
                         Notes
+                    </button>
+                    <button
+                        onClick={() => handleNavigation('/resources')}
+                        className="bg-gray-600 text-white font-semibold py-2 px-4 rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
+                    >
+                        Resources
                     </button>
                     <button
                         onClick={() => handleNavigation('/pyq')}

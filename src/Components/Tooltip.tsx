@@ -27,7 +27,7 @@ const people = [
   {
     id: 4,
     name: "Mandar Nikam",
-    designation: "Bhau",
+    designation: "Ui/UX Designer",
     image: mandar,
   },
 ];
