@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 
 import Home from './pages/Home'
-import Notes from './pages/Notes'
+
 import Pyq from './pages/Pyq'
 import SemesterPage from './pages/Semester'
 import VideoList from './pages/Videos'
@@ -17,8 +17,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          
-          <Route path="/notes" element={<Notes />} />
           <Route path='/pyq' element={<Pyq/>}/>
           <Route path='/resources' element={<SemesterPage/>}/>
           <Route path='/videos/:semester' element={<VideoList/>}/>

@@ -24,45 +24,49 @@ const VideoList: React.FC = () => {
     return (
         <>
             <Navbar />
-            <div className="min-h-screen bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white p-6">
-                {selectedSemester ? (
-                    <>
-                        <h2 className="text-3xl font-bold mb-6 text-center">
-                            Videos for {selectedSemester.semester}
-                        </h2>
-                        <div className="flex flex-col m-auto gap-4 w-1/2">
-                            {selectedSemester.videos.map((video, index) => (
-                                <div
-                                    key={index}
-                                    className="bg-slate-900 shadow-lg rounded-lg p-4 border border-gray-200"
-                                >
-                                    <div className="flex items-center justify-between mb-2">
-                                        <h3 className="text-lg font-semibold text-white">
-                                            {video.title}
-                                        </h3>
-                                        <button
-                                            onClick={() => handleToggle(index)}
-                                            className="text-blue-500 hover:text-blue-700 transition"
-                                        >
-                                            {openIndex === index ? "−" : "+"}
-                                        </button>
+            <div className="min-h-screen bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white p-6 flex flex-col">
+                <div className="flex-1 overflow-y-auto">
+                    {selectedSemester ? (
+                        <>
+                            <h2 className="text-3xl font-bold mb-6 text-center">
+                                Videos for {selectedSemester.semester}
+                            </h2>
+                            <div className="flex flex-col gap-4 mx-auto w-full max-w-4xl">
+                                {selectedSemester.videos.map((video, index) => (
+                                    <div
+                                        key={index}
+                                        className="bg-slate-900 shadow-lg rounded-lg p-4 border border-gray-200"
+                                    >
+                                        <div className="flex items-center justify-between mb-2">
+                                            <h3 className="text-lg font-semibold text-white">
+                                                {video.title}
+                                            </h3>
+                                            <button
+                                                onClick={() => handleToggle(index)}
+                                                className="text-blue-500 hover:text-blue-700 transition"
+                                            >
+                                                {openIndex === index ? "−" : "+"}
+                                            </button>
+                                        </div>
+                                        {openIndex === index && (
+                                            <div
+                                                className="iframe-container w-full mb-4 bg-gray-800 flex justify-center rounded-lg"
+                                                dangerouslySetInnerHTML={{ __html: video.iframe }}
+                                            />
+                                        )}
                                     </div>
-                                    {openIndex === index && (
-                                        <div
-                                            className="iframe-container w-full bg-gray-800 flex justify-center rounded-lg overflow-hidden"
-                                            dangerouslySetInnerHTML={{ __html: video.iframe }}
-                                        />
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                        <div className="fixed bottom-0 left-0 right-0">
-                            <Footer />
-                        </div>
-                    </>
-                ) : (
-                    <p className="text-center text-white text-5xl">No videos available for this semester.</p>
-                )}
+                                ))}
+                            </div>
+                        </>
+                    ) : (
+                        <p className="text-center text-white text-5xl">No videos available for this semester.</p>
+                    )}
+                </div>
+                {/* Spacer to push footer to the bottom */}
+                <div className="h-16"></div>
+                <div className="p-4 ">
+                    <Footer />
+                </div>
             </div>
         </>
     );
