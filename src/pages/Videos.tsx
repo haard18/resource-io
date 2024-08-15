@@ -64,7 +64,7 @@ const VideoList: React.FC = () => {
                 </div>
                 {/* Spacer to push footer to the bottom */}
                 <div className="h-16"></div>
-                <div className="p-4 ">
+                <div className="p-4 bg-gradient-to-r from-black via-gray-900 to-black">
                     <Footer />
                 </div>
             </div>
