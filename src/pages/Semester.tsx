@@ -45,9 +45,9 @@ const SemesterPage = () => {
         <div className="h-16"></div>
 
       </div>
-      <div className="p-4 justify-center mobile:p-4 ml-[-10%] laptop:p-8 bg-gradient-to-r from-black via-gray-900 to-black">
-          <Footer />
-        </div>
+      <div className="p-4 justify-center mobile:p-4  laptop:p-8 bg-gradient-to-r from-black via-gray-900 to-black">
+        <Footer />
+      </div>
     </>
   );
 };

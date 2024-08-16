@@ -23,7 +23,7 @@ export const HoverEffect = ({
         "flex flex-col items-center gap-6 py-10",
         "mobile:flex-row mobile:flex-wrap laptop:flex-row laptop:justify-center desktop:flex-row desktop:justify-center large:flex-row large:justify-center",
         className
-      )}
+      ) } style={{ fontFamily: "'Baloo Bhai 2', sans serif" }}
     >
       {items.map((item, idx) => (
         <div

@@ -15,7 +15,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-gray-800 text-sky-100 shadow-md w-full ">
+        <nav className="bg-gray-800 text-sky-100 shadow-md w-full " style={{ fontFamily: "'Baloo Bhai 2', sans serif" }}>
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
                 {/* Logo and Name */}
                 <div className="flex items-center space-x-2">
@@ -93,6 +93,12 @@ const Navbar = () => {
                     className="block w-full text-left px-4 py-2 text-sm bg-gray-800 text-white font-semibold rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
                 >
                     PYQs
+                </button>
+                <button
+                    onClick={() => handleNavigation('/skills')}
+                    className="block w-full text-left px-4 py-2 text-sm bg-gray-800 text-white font-semibold rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
+                >
+                    Skills
                 </button>
             </div>
         </nav>
