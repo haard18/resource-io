@@ -51,8 +51,8 @@ export const pyqs = [
             "Cryptography",
             "Mobile App Development"
         ],
-        link: "https://drive.google.com/drive/folders/1CptoPYehKhqMUo_FOfrDVGqJhP6NRFp1?usp=drive_link",
-        driveLink: "https://drive.google.com/drive/folders/1CptoPYehKhqMUo_FOfrDVGqJhP6NRFp1?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1OJcTJNIxZz5Av8b7PvKZ0gTqTIorYu2G",
+        driveLink: "https://drive.google.com/drive/folders/1OJcTJNIxZz5Av8b7PvKZ0gTqTIorYu2G"
     },
     {
         title: "Sem 6",
