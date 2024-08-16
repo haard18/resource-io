@@ -8,6 +8,7 @@ import Pyq from './pages/Pyq'
 import SemesterPage from './pages/Semester'
 import VideoList from './pages/Videos'
 import { Analytics } from '@vercel/analytics/react'
+import SkillsPage from './pages/Skills'
 function App() {
 
   
@@ -20,6 +21,7 @@ function App() {
           <Route path='/pyq' element={<Pyq/>}/>
           <Route path='/resources' element={<SemesterPage/>}/>
           <Route path='/videos/:semester' element={<VideoList/>}/>
+          <Route path='/skills' element={<SkillsPage/>}/>
         </Routes>
         <Analytics />
 
