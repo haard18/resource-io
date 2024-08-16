@@ -8,6 +8,7 @@ import Pyq from './pages/Pyq'
 import SemesterPage from './pages/Semester'
 import VideoList from './pages/Videos'
 import { Analytics } from '@vercel/analytics/react'
+import { TypewriterEffectSmoothDemo } from './pages/Landing'
 function App() {
 
   
@@ -16,7 +17,7 @@ function App() {
       
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<TypewriterEffectSmoothDemo />} />
           <Route path='/pyq' element={<Pyq/>}/>
           <Route path='/resources' element={<SemesterPage/>}/>
           <Route path='/videos/:semester' element={<VideoList/>}/>
