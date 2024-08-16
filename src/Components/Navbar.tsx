@@ -34,7 +34,7 @@ const Navbar = () => {
                 <div className="hidden laptop:flex space-x-4">
 
                     <button
-                        onClick={() => handleNavigation('/')}
+                        onClick={() => handleNavigation('/notes')}
                         className="bg-gray-600 text-white font-semibold py-2 px-4 rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
                     >
                         Notes
@@ -50,6 +50,9 @@ const Navbar = () => {
                         className="bg-gray-600 text-white font-semibold py-2 px-4 rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
                     >
                         PYQs
+                    </button>
+                    <button onClick={() => handleNavigation('/skills')} className="bg-gray-600 text-white font-semibold py-2 px-4 rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none">
+                        Skills
                     </button>
                 </div>
 
@@ -80,7 +83,7 @@ const Navbar = () => {
                     Resources
                 </button>
                 <button
-                    onClick={() => handleNavigation('/')}
+                    onClick={() => handleNavigation('/notes')}
                     className="block w-full text-left px-4 py-2 text-sm bg-gray-800 text-white font-semibold rounded hover:bg-sky-600 transition duration-300 ease-in-out focus:outline-none"
                 >
                     Notes

@@ -9,6 +9,8 @@ import { Analytics } from '@vercel/analytics/react'
 import SkillsPage from './pages/Skills'
 
 import Home from './pages/Home'
+import {AuroraBackgroundDemo} from './pages/Landing'
+import OrgChartTree from './pages/tree'
 function App() {
 
   
@@ -17,11 +19,13 @@ function App() {
       
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/notes" element={<Home />} />
+          <Route path='/' element={<AuroraBackgroundDemo/>}/>
           <Route path='/pyq' element={<Pyq/>}/>
           <Route path='/resources' element={<SemesterPage/>}/>
           <Route path='/videos/:semester' element={<VideoList/>}/>
           <Route path='/skills' element={<SkillsPage/>}/>
+          <Route path='/tree/:skill' element={<OrgChartTree/>}/>
         </Routes>
         <Analytics />
 
