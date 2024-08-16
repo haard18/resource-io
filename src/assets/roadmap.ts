@@ -755,3 +755,40 @@ export const COMPUTERFUNDAMENTALS = {
         },
     ],
 };
+export const UIUXROADMAP = {
+    name: "UI/UX Roadmap",
+    children: [
+        {
+            name: "Foundations",
+            children: [
+                { name: "Design Principles" },
+                { name: "Color Theory" },
+                { name: "Typography" },
+            ],
+        },
+        {
+            name: "UI Design",
+            children: [
+                { name: "Wireframing" },
+                { name: "Prototyping" },
+                { name: "Visual Design" },
+            ],
+        },
+        {
+            name: "UX Research",
+            children: [
+                { name: "User Interviews" },
+                { name: "Surveys" },
+                { name: "Usability Testing" },
+            ],
+        },
+        {
+            name: "Tools",
+            children: [
+                { name: "Figma" },
+                { name: "Sketch" },
+                { name: "Adobe XD" },
+            ],
+        },
+    ],
+};

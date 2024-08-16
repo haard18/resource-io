@@ -11,6 +11,7 @@ const skills = [
     'Machine-Learning',
     'Artificial-Intelligence',
     'Computer-Fundamentals',
+    'UI-UX',
 ];
 
 const SkillsPage: React.FC = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Tree from 'react-d3-tree';
-import { WEBDEVELOPMENT, MOBILEAPPDEVELOPMENT, DATASCIENCE, MACHINELEARNING, ARTIFICIALINTELLIGENCE, COMPUTERFUNDAMENTALS } from '../assets/roadmap';
+import { WEBDEVELOPMENT, MOBILEAPPDEVELOPMENT, DATASCIENCE, MACHINELEARNING, ARTIFICIALINTELLIGENCE, COMPUTERFUNDAMENTALS, UIUXROADMAP } from '../assets/roadmap';
 import Navbar from '../Components/Navbar';
 import useMediaQuery from '../hooks/useMediaQuery'; // Custom hook for media query
 
@@ -19,6 +19,7 @@ const skillMap: { [key: string]: RawNodeDatum } = {
     'Machine-Learning': MACHINELEARNING,
     'Artificial-Intelligence': ARTIFICIALINTELLIGENCE,
     'Computer-Fundamentals': COMPUTERFUNDAMENTALS,
+    'UI-UX':UIUXROADMAP
 };
 
 const TreePage: React.FC = () => {
