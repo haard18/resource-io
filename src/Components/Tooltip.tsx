@@ -15,7 +15,7 @@ const people = [
   {
     id: 2,
     name: "Dhairya Chawda",
-    designation: "Ui/UX Designer",
+    designation: "Debug Dynamo",
     image: dhairya,
   },
   {
