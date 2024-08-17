@@ -63,7 +63,7 @@ const TreePage: React.FC = () => {
                     {roadmap ? (
                         <Tree
                             orientation='vertical' // Use horizontal orientation for mobile
-                            initialDepth={0}
+                            initialDepth={1}
                             translate={isMobile ? { x: 200, y: 200 } : { x: 800, y: 300 }}
                             zoom={isMobile ? 0.5 : 1}
                             separation={isMobile ? { siblings: 4, nonSiblings: 4 } : { siblings: 5, nonSiblings: 3 }}
