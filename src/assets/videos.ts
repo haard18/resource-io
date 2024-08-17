@@ -128,5 +128,23 @@ export const videosArray = [
                 iframe:'<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=VGZ_52N9DXMk4SVa&amp;list=PL9n0l8rSshSnragNblKDBsT8Xu3otp3jA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
             }
         ]
+    },
+    {
+        semester:"Sem7",
+        videos:[
+            {
+                title:"Deep Learning",
+                iframe:'<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=1rsP2Pmr-J4nA_Sn&amp;list=PLYwpaL_SFmcD-6P8cuX2bZAHSThF6AYvq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+            },
+
+            {
+                title:"Compiler Design",
+                iframe:'<iframe width="560" height="315" src="https://www.youtube.com/embed/7ICf62fp_4I?si=ZNbi8892NiMvpQx1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+            },
+            {
+                title:"CCA",
+                iframe:'<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Pr3HqVpMLQborH3y&amp;list=PLrf-FW1ZGnWQB9Qn5n18-DcFmH26G5FYH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+            }
+        ]
     }
 ];
