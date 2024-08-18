@@ -30,7 +30,7 @@ export const pyqs = [
             "Object-Oriented Programming in Java"
         ],
         link: "https://drive.google.com/drive/folders/17IdTmuNmaOSch1WTqJSEQa4FpFzroRo_",
-        driveLink: https://drive.google.com/drive/folders/17IdTmuNmaOSch1WTqJSEQa4FpFzroRo_"
+        driveLink: "https://drive.google.com/drive/folders/17IdTmuNmaOSch1WTqJSEQa4FpFzroRo_"
     },
     {
         title: "Sem 4",
@@ -46,9 +46,9 @@ export const pyqs = [
     {
         title: "Sem 5",
         subjects: [
-            "Algorithms",
+            "Theory of Computation",
             "Machine Learning",
-            "Cryptography",
+            "Principles of AI",
             "Mobile App Development"
         ],
         link: "https://drive.google.com/drive/folders/1OJcTJNIxZz5Av8b7PvKZ0gTqTIorYu2G",
