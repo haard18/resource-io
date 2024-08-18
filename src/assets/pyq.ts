@@ -24,13 +24,13 @@ export const pyqs = [
     {
         title: "Sem 3",
         subjects: [
-            "Discrete Mathematics",
-            "Digital Logic Design",
+           "Computer Architecture",
+            "System Software",
             "Database Management Systems",
-            "Object-Oriented Programming"
+            "Object-Oriented Programming in Java"
         ],
-        link: "https://drive.google.com/drive/folders/10l-yEYAfigiGXrNcENRung7uvZSGhnIW?usp=drive_link",
-        driveLink: "https://drive.google.com/drive/folders/10l-yEYAfigiGXrNcENRung7uvZSGhnIW?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/17IdTmuNmaOSch1WTqJSEQa4FpFzroRo_",
+        driveLink: https://drive.google.com/drive/folders/17IdTmuNmaOSch1WTqJSEQa4FpFzroRo_"
     },
     {
         title: "Sem 4",
