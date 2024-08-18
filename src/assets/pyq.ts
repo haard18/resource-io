@@ -2,35 +2,35 @@ export const pyqs = [
     {
         title: "Sem 1",
         subjects: [
-            "Mathematics I",
-            "Physics I",
-            "Chemistry",
-            "Programming Fundamentals"
+            "Programming in Python I",
+            "R Programming",
+            "Discreete Maths",
+            "Web Technologies"
         ],
-        link: "https://drive.google.com/drive/folders/1A3JsmjBt-8qE5fDxa0HVlp0-VZ4GkYjJ?usp=drive_link",
-        driveLink: "https://drive.google.com/drive/folders/1A3JsmjBt-8qE5fDxa0HVlp0-VZ4GkYjJ?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1OqYOm8uB-9VX_GWuTid0tP1PzU0rMkyP",
+        driveLink: "https://drive.google.com/drive/folders/1OqYOm8uB-9VX_GWuTid0tP1PzU0rMkyP"
     },
     {
         title: "Sem 2",
         subjects: [
-            "Mathematics II",
-            "Physics II",
-            "Engineering Drawing",
-            "Data Structures"
+            "Programming in Python 2",
+            "C Programming",
+            "Computer Graphics",
+            "Data Structures and Algorithms"
         ],
-        link: "https://drive.google.com/drive/folders/1eylgOapntZhOvPl962-c0KlXaEthhHms?usp=drive_link",
-        driveLink: "https://drive.google.com/drive/folders/1eylgOapntZhOvPl962-c0KlXaEthhHms?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1w4BOgIQum6pMmflPIaa7hgoVq3r1xbo-",
+        driveLink: "https://drive.google.com/drive/folders/1w4BOgIQum6pMmflPIaa7hgoVq3r1xbo-"
     },
     {
         title: "Sem 3",
         subjects: [
-            "Discrete Mathematics",
-            "Digital Logic Design",
+           "Computer Architecture",
+            "System Software",
             "Database Management Systems",
-            "Object-Oriented Programming"
+            "Object-Oriented Programming in Java"
         ],
-        link: "https://drive.google.com/drive/folders/10l-yEYAfigiGXrNcENRung7uvZSGhnIW?usp=drive_link",
-        driveLink: "https://drive.google.com/drive/folders/10l-yEYAfigiGXrNcENRung7uvZSGhnIW?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/17IdTmuNmaOSch1WTqJSEQa4FpFzroRo_",
+        driveLink: https://drive.google.com/drive/folders/17IdTmuNmaOSch1WTqJSEQa4FpFzroRo_"
     },
     {
         title: "Sem 4",
@@ -51,8 +51,8 @@ export const pyqs = [
             "Cryptography",
             "Mobile App Development"
         ],
-        link: "https://drive.google.com/drive/folders/1CptoPYehKhqMUo_FOfrDVGqJhP6NRFp1?usp=drive_link",
-        driveLink: "https://drive.google.com/drive/folders/1CptoPYehKhqMUo_FOfrDVGqJhP6NRFp1?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1OJcTJNIxZz5Av8b7PvKZ0gTqTIorYu2G",
+        driveLink: "https://drive.google.com/drive/folders/1OJcTJNIxZz5Av8b7PvKZ0gTqTIorYu2G"
     },
     {
         title: "Sem 6",
