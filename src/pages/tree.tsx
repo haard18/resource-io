@@ -57,7 +57,7 @@ const TreePage: React.FC = () => {
                                 />
                             </svg>
                         ) : (
-                            'Back to Skills'
+                            'Skills'
                         )}
                     </Link>
                     {roadmap ? (
