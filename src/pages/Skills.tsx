@@ -40,9 +40,9 @@ const SkillsPage: React.FC = () => {
                         ))}
                     </div>
                 </div>
-                <footer className="bg-gray-800 text-white mt-auto">
+                <div className="p-4 mobile:p-4 ml-[-10%] laptop:p-8 bg-gradient-to-r from-black via-gray-900 to-black">
                     <Footer />
-                </footer>
+                </div>
             </div>
         </>
     );
