@@ -96,7 +96,7 @@ export const videosArray = [
             },
             {
                 title: "Theory of computation",
-                iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=b4nQwRW6ZhOWUnoj&amp;list=PLxCzCOWd7aiFM9Lj5G9G_76adtyb4ef7i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+                iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=rxgPOZtrxqqQYUC_&amp;list=PLYwpaL_SFmcDXLUrW3JEq2cv8efNF6UeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
             },
             {
                 title: "Principles of AI",
