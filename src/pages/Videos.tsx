@@ -49,10 +49,20 @@ const VideoList: React.FC = () => {
                                             </button>
                                         </div>
                                         {openIndex === index && (
-                                            <div
-                                                className="iframe-container w-full mb-4 bg-gray-800 flex justify-center rounded-lg"
-                                                dangerouslySetInnerHTML={{ __html: video.iframe }}
-                                            />
+                                            <div className="flex flex-col">
+                                                {/* Render the first iframe */}
+                                                <div
+                                                    className="iframe-container w-full mb-4 bg-gray-800 flex justify-center rounded-lg"
+                                                    dangerouslySetInnerHTML={{ __html: video.iframe }}
+                                                />
+                                                {/* Check for iframe2 and render it if present */}
+                                                {video.iframe2 && (
+                                                    <div
+                                                        className="iframe-container w-full mb-4 bg-gray-800 flex justify-center rounded-lg"
+                                                        dangerouslySetInnerHTML={{ __html: video.iframe2 }}
+                                                    />
+                                                )}
+                                            </div>
                                         )}
                                     </div>
                                 ))}
@@ -67,7 +77,6 @@ const VideoList: React.FC = () => {
                 <div className="p-4 mobile:p-4 ml-[-10%] laptop:p-8 bg-gradient-to-r from-black via-gray-900 to-black">
                     <Footer />
                 </div>
-
             </div>
         </>
     );
