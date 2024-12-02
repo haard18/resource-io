@@ -24,7 +24,7 @@ const VideoList: React.FC = () => {
     return (
         <>
             <Navbar />
-            <div className="min-h-screen bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white p-6 flex flex-col">
+            <div className="min-h-screen bg-gradient-to-r from-black via-gray-900 to-black text-white p-6 flex flex-col">
                 <div className="flex-1 overflow-y-auto">
                     {selectedSemester ? (
                         <>

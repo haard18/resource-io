@@ -25,7 +25,7 @@ const SkillsPage: React.FC = () => {
     return (
         <>
             <Navbar />
-            <div style={{ fontFamily: "'Baloo Bhai 2', sans serif" }} className="min-h-screen bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white p-6 flex flex-col">
+            <div style={{ fontFamily: "'Baloo Bhai 2', sans serif" }} className="min-h-screen  bg-gradient-to-r from-black via-gray-900 to-black text-white p-6 flex flex-col">
                 <div className="flex-1">
                     <h1 className="text-4xl font-bold mb-6 text-center">Top Skills </h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">

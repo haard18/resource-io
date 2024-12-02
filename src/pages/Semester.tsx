@@ -14,7 +14,7 @@ const SemesterPage = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-gray-800 via-gray-900 to-black">
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-black via-gray-900 to-black">
         <h1 className="text-4xl font-bold mb-8 text-white pt-4">
           Select a Semester
         </h1>
