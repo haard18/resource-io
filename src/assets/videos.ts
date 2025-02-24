@@ -117,6 +117,10 @@ export const videosArray = [
                 iframe:'<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=MTqufr2MApWFXf-z&amp;list=PLjVLYmrlmjGfGLShoW0vVX_tcyT8u1Y3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
             },
             {
+                title: "CLA",
+                iframe:'<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=1QMPr_-vH9dRIbZb&amp;list=PLYwpaL_SFmcBIvoAp958f062XeOuF8KGT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+            },
+            {
                 title:"Computer Vision",
                 iframe:'<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Wx-xsjV09GMs1DyS&amp;list=PLYwpaL_SFmcCNh0io3btKeZjTLyvTNEcW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
             },

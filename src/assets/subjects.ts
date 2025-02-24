@@ -49,10 +49,11 @@ export const subs=[
     {
         title:"Sem6",
         subjects:[
-            "Artificial Intelligence",
-            "Big Data Analytics",
-            "Cyber Security",
-            "Software Testing"
+            "Data analysis and Visualization",
+            "Computer Vision",
+            "UML",
+            "Calculus and Linear Algebra",
+            "Flutter"
         ]
     },
     {

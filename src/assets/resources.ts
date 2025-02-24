@@ -66,6 +66,7 @@ export const projects = [
         link: "https://drive.google.com/drive/folders/1vPOp-nqAk9Rm5xYleujeDtzuOHpP_Xyo?usp=drive_link",
         driveLink: "https://drive.google.com/drive/folders/1vPOp-nqAk9Rm5xYleujeDtzuOHpP_Xyo?usp=drive_link"
     },
+    
     {
         title: "Sem 7",
         subjects: [
